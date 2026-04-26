@@ -118,6 +118,12 @@ python
 print("Hello, world!")
 ```
 
+---
+
+## Opening `Command Prompt` & running python.
+
+1. clikc on the `Windowns`
+
 4. Press Enter
 
 🎉 You just ran your first Python program!
