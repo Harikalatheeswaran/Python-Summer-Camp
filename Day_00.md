@@ -22,6 +22,7 @@ Follow these simple steps to install Python on your Windows computer. Don’t wo
 3. You should see a big yellow button that says something like:
    👉 **Download Python (latest version)**
 4. Click that button to start downloading.
+5. Or use this link to download : https://www.python.org/ftp/python/3.14.4/python-3.14.4-amd64.exe
 
 ---
 
