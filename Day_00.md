@@ -2,6 +2,27 @@
 
 ---
 
+## 🤔 What is Python?
+
+Python is a programming language that helps us talk to computers.
+
+With Python, you can build:
+
+- Games 🎮
+- Websites 🌐
+- Apps 📱
+- Robots 🤖
+- AI tools 🤖
+
+Even big companies use Python:
+- Google
+- Netflix
+- Instagram
+
+Cool right? 😄
+
+---
+
 ## 🐍 Python Installation Guide (Windows)
 
 Follow these simple steps to install Python on your Windows computer. Don’t worry—just go step by step!
@@ -117,14 +138,120 @@ python
 ```python
 print("Hello, world!")
 ```
+🎉 You just ran your first Python program!
 
 ---
 
-## Opening `Command Prompt` & running python.
+# 📁 Creating Your First Python File
 
-1. clikc on the `Windowns`
+Create a file named:
 
-4. Press Enter
+`hello.py`
 
-🎉 You just ran your first Python program!
+Add this code:
+
+```python
+print("Hello 😊")
+print("I love Python 🐍")
+print("Meow 🐱")
+print(":)")
+```
+
+Save the file.
+
+---
+
+# ▶️ Running Python File Using IDLE
+
+1. Right click the file
+2. Open with **IDLE**
+3. Press:
+
+`F5`
+
+Your program will run 🎉
+
+---
+
+# 💻 Running Python File Using CMD
+
+This is how developers run files 😎
+
+## Step 1: Open CMD in Current Folder
+
+- Go to the folder where `hello.py` is saved
+- Click the address bar
+- Type:
+
+`cmd`
+
+- Press Enter
+
+CMD opens directly in your current folder.
+
+---
+
+## Step 2: Check Files in Folder
+
+Type:
+
+`dir`
+
+This shows all files in that folder.
+
+You should see:
+
+`hello.py`
+
+---
+
+## Step 3: Run Your Python File
+
+Type:
+
+`python hello.py`
+
+Your file runs 🎉
+
+---
+
+# 🎯 Fun Activity
+
+Create a file called:
+
+`about_me.py`
+
+Write:
+
+```python
+print("My name is _____")
+print("I like _____")
+print("My favorite animal is _____")
+print("I want to build games!")
+```
+
+Replace the blanks with your own answers.
+
+---
+
+# 🏁 What You Learned Today
+
+- What Python is
+- How to install Python
+- How to use Command Prompt
+- How to create Python files
+- How to run Python files using IDLE
+- How to run Python files using CMD
+
+---
+
+# 🚀 Homework
+
+Create a file called:
+
+`about_me.py`
+
+Write 5 `print()` statements about yourself and run it using CMD.
+
+
 
