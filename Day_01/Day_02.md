@@ -1,93 +1,92 @@
-
-# 🐍 Day 02 - Printing, Variables, Conditions & Functions
+# 🐍 Day 02 - Built-in Functions, Variables, Input & Terminal Basics
 
 Welcome back! 🎉
 
-Today we will learn:
-- Different ways to print lines 🖨️
-- Variables 📦
-- If conditions 🤔
-- Taking input from user ⌨️
-- Functions 🧠
-
-Take it slow. Try every example yourself 💡
+Today we learned some very important basics that real programmers use every day.
 
 ---
 
-# 🖨️ Printing in Python
+## 🧠 1. Built-in Functions (type, help, exit)
 
-We already used `print()` to show output.
+Python gives us some **ready-made functions**. We can use them directly.
 
-👉 Think of `print()` like talking to the computer screen.
+### 🔹 `type()`
 
----
+This tells us **what kind of data** something is.
 
-## 🔹 Method 1: Using multiple print statements
+```python
+print(type("Hello"))
+print(type(10))
+```
 
-print("Hello")
-print("How are you?")
-
-👉 Each `print()` goes to a new line automatically.
-
----
-
-## 🔹 Method 2: Using \n (New Line)
-
-`\n` means **"go to next line"**.
-
-print("Hello\nHow are you?")
-
-👉 Output:
-Hello
-How are you?
+👉 Output will show things like `str` (text) and `int` (number)
 
 ---
 
-## 🧠 When to use \n?
+### 🔹 `help()`
 
-- When you want **one print statement**
-- When you are building long text
+This shows **information about Python commands**.
 
----
+```python
+help(print)
+```
 
-## 🎯 Activity
-
-Print this using ONE print statement:
-
-I like Python
-It is fun
-I am learning coding
+👉 Think of it like asking Python:
+👉 "Explain this to me"
 
 ---
 
-# 📦 Variables
+### 🔹 `exit()`
 
-A variable is like a **box that stores information**.
+This stops Python.
 
-👉 We give the box a name so we can use it later.
+```python
+exit()
+```
+
+👉 Imagine this like:
+Tom holding a hammer 🔨
+When you call `exit()`, Python goes to sleep 😴
 
 ---
 
-## 🔹 Example
+## 💻 Where did we run these?
 
-name = "Rahul"
+We used the **Command Prompt (CMD)** and typed `python` to enter Python mode.
+
+---
+
+## 📦 2. Variables
+
+A variable is like a **box 📦 that stores data**.
+
+We give the box a name, and we can use it later.
+
+---
+
+### 🔹 Example
+
+```python
+name = "Arjun"
 age = 12
 
 print(name)
 print(age)
+```
+
+👉 `name` stores text
+👉 `age` stores number
 
 ---
 
-## 🧠 Understand clearly
+## 🧠 Easy Understanding
 
-- `name` → label of the box
-- `"Rahul"` → value inside the box
-
-👉 You can change the value anytime.
+- Variable name = label on the box
+- Value = what is inside the box
 
 ---
 
-## 📏 Rules for naming variables
+## 📏 Rules for Naming Variables
 
 ✅ Allowed:
 - letters (a-z, A-Z)
@@ -95,216 +94,122 @@ print(age)
 - underscore (_)
 
 ❌ Not allowed:
-- spaces → my name ❌
-- starting with number → 1name ❌
+- spaces → `my name`
+- starting with number → `1name`
 
 ---
 
-## ✅ Good examples
+### ✅ Good Examples
 
-name = "Arjun"
+```python
+my_name = "Rahul"
 age = 13
-my_pet = "Cat"
+pet_name = "Dog"
+```
 
 ---
 
-## ❌ Bad examples (will give error)
+### ❌ Bad Examples
 
-1name = "Arjun"
-my name = "Arjun"
+```python
+1name = "Rahul"
+my name = "Rahul"
+```
 
 ---
 
 ## 🎯 Activity
 
-Create 3 variables:
+Create variables:
 - your name
-- your favorite food
+- your favorite color
 - your age
 
-Print all of them.
+Print them.
 
 ---
 
-# 🤔 If Conditions
+## ⌨️ 3. Taking Input from User
 
-Python can **make decisions** just like humans.
-
-👉 Example:
-If it is raining → take umbrella ☔
+We can ask the user to type something.
 
 ---
 
-## 🔹 Basic if
+### 🔹 Example
 
-age = 15
-
-if age > 10:
-    print("You are older than 10")
-
-👉 If condition is TRUE → code runs
-👉 If FALSE → nothing happens
-
----
-
-## 🔹 if - else
-
-age = 8
-
-if age > 10:
-    print("You are older than 10")
-else:
-    print("You are 10 or younger")
-
-👉 Only ONE block will run
-
----
-
-## 🔹 if - elif - else
-
-marks = 75
-
-if marks > 90:
-    print("Excellent")
-elif marks > 50:
-    print("Good")
-else:
-    print("Try again")
-
-👉 Python checks from top to bottom
-👉 First TRUE condition runs
-
----
-
-## 🎯 Activity
-
-Write a program:
-
-- If number > 0 → print "Positive"
-- Else → print "Negative"
-
----
-
-# ⌨️ Taking Input from User
-
-Now we can **ask the user for input**.
-
----
-
-## 🔹 Example
-
+```python
 name = input("Enter your name: ")
+print("Hello " + name)
+```
 
-print("Hello", name)
-
-👉 User types something → Python stores it
-
----
-
-## 🧠 Important Concept
-
-input() always gives **text (string)**
-
-Even if user types number, it is still text.
+👉 Python waits for user input
+👉 Stores it in `name`
+👉 Then prints greeting
 
 ---
 
-## 🔹 Example with number
+## 📁 Program: greetings.py
 
-age = int(input("Enter your age: "))
+We created a file called `greetings.py`
 
-print(age + 1)
-
-👉 `int()` converts text → number
-
----
-
-## 🎯 Activity
-
-Ask user:
-- name
-- favorite game
-
-Print:
-Hello <name>
-You like <game>
+```python
+name = input("Enter your name: ")
+print("Hello " + name)
+```
 
 ---
 
-# 🧠 Functions
+## 🧠 Important Note
 
-Functions help us **reuse code**.
-
-👉 Instead of writing same code again and again, we use functions.
+`input()` always gives **text (string)**
 
 ---
 
-## 🔹 Example
+## 💻 4. Terminal Command - Clear Screen
 
-def say_hello():
-    print("Hello!")
+Sometimes the screen gets messy.
 
-say_hello()
+We can clear it using:
 
-👉 We define once → use many times
+```
+cls
+```
 
----
-
-## 🔹 Function with input
-
-def greet(name):
-    print("Hello", name)
-
-greet("Arjun")
-
-👉 "Arjun" is passed into function
+👉 This works in **Command Prompt (CMD)**
+👉 It clears everything on the screen
 
 ---
 
-## 🔹 Function with return
+## 🏁 What You Learned Today
 
-def add(a, b):
-    return a + b
-
-result = add(5, 3)
-print(result)
-
-👉 `return` sends value back
-
----
-
-## 🎯 Activity
-
-Create a function:
-
-Name: introduce
-
-It should print:
-- your name
-- your age
+- Built-in functions: `type()`, `help()`, `exit()`
+- Variables and how they store data
+- Rules for naming variables
+- Taking input using `input()`
+- Writing a small program (greetings.py)
+- Clearing screen using `cls`
 
 ---
 
-# 🏁 What You Learned Today
+## 🚀 Homework
 
-- Printing with \n
-- Variables and rules
-- If conditions
-- Taking input
-- Functions
+1. Create a file:
+
+```
+calculator.py
+```
+
+2. Ask user:
+- number 1
+- number 2
+
+3. Print:
+    - the sum of numbers : use `+` to add two numbers
+    - the difference of numbers : use `-` to subtract two numbers
+    - the product of numbers : use `*` to multiply two numbers
+    - the division of numbers : use `/` to divide two numbers
+
 
 ---
 
-# 🚀 Homework
-
-1. Ask user name and age
-2. If age > 18 → print "Adult"
-3. Else → print "Kid"
-
-4. Create a function that prints:
-
-I am learning Python!
-
----
-
-Great job today! 🎉
+Great job today! 🎉 Keep practicing!
