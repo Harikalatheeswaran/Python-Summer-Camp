@@ -222,6 +222,13 @@ calculator.py
     print(sum)
    ```
 
+5. Working of `input()` function:
+   ```
+    1. The input() - takes the input from the user.
+    2. It will convert the input form the user to "string" 
+    3. It will assign to the variable we used.
+   ```
+
 ---
 
 Great job today! 🎉 Keep practicing!
