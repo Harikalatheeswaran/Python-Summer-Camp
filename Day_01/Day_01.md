@@ -209,6 +209,18 @@ calculator.py
     - the product of numbers : use `*` to multiply two numbers
     - the division of numbers : use `/` to divide two numbers
 
+4. Here's the tip
+   ```python
+    number_1 = input("Enter the first number : ")
+    number_2 = input("Enter the second number : ")
+    
+    num_1 = int(number_1)
+    num_2 = int(number_2)
+    
+    sum = num_1 + num_2
+    
+    print(sum)
+   ```
 
 ---
 
