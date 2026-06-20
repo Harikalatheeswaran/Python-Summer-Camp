@@ -432,11 +432,6 @@ print("they are very smart!")
 Modify today's program.
 
 Add another condition in such a way that if the user inputs `56` you should print the following
-```python
-print("There are 8 planets in the solar system")
-print("Pluto is not a planer because : ")
-print("Pluto's orbit is ir-regular & messy")
-```
 
 Make it print something fun.
 
